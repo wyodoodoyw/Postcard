@@ -26,10 +26,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        // update message label
         messageLabel.hidden = false                             // un-hides the label
         messageLabel.text = enterMessageTextField.text          // sets text in label to input text
         messageLabel.textColor = UIColor.redColor()             // changes label text colour to red
         
+        // update message field
         enterMessageTextField.text = ""                         // clears text field upon click
         enterMessageTextField.resignFirstResponder()            // hides keyboard
         
